@@ -1,0 +1,100 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: var(--color-blue-400);
+    font-size: var(--font-size-200);
+    font-family: Assistant, sans-serif;
+    font-style: normal;
+    line-height: 1.5;
+    text-rendering: optimizespeed;
+    background-color: var(--color-white);
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+input,
+button,
+select {
+  color: inherit;
+  font-family: inherit;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+  }
+  
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .input__heading {
+    font-size: var(--font-size-100);
+    line-height: 1;
+  }
+  
+.input input {
+    min-width: 160px;
+    min-height: 45px;
+    padding: 10px 15px;
+    font-size: var(--font-size-300);
+    background-color: var(--color-blue-100);
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    appearance: none;
+  }
+  
+  .input input::placeholder {
+    color: var(--color-blue-400);
+    opacity: 0.4;
+  }
+  .select select {
+    min-width: 160px;
+    min-height: 45px;
+    padding: 10px 40px 10px 15px;
+    font-size: var(--font-size-300);
+    background-color: var(--color-white);
+    background-color: var(--color-white);
+    background-image: url('../assets/images/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position: right 15px top 50%;
+    background-size: 15px;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    appearance: none;
+  }
+  .button {
+    display: block;
+    width: 100%;
+    min-height: 45px;
+    padding: 10px 15px;
+    color: var(--color-white);
+    font-size: var(--font-size-200);
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--color-blue-200);
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: var(--color-blue-300);
+  }
